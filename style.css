@@ -1,57 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&family=JetBrains+Mono:wght@700&display=swap');
 
 body {
-    margin: 0; 
-    background: #000; 
+    margin: 0;
+    background-color: #000; /* Pure black background */
     color: #fff;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
+    overflow: hidden;
 }
 
-.lab-container { 
-    text-align: center; 
-    max-width: 600px; 
+.lab-container {
+    text-align: center;
+    max-width: 500px;
 }
 
-h1 { 
-    font-size: 3.5rem; 
+h1 {
+    font-size: 3.2rem;
     font-weight: 800;
-    letter-spacing: -2px; 
-    margin-bottom: 20px;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
     line-height: 1.1;
 }
 
-/* "Lab Session" oru line-la vara */
-h1 span { 
+/* Orange color for 'Session' */
+h1 span {
     color: #f97316;
 }
 
-/* {{ selectedDay }} mathiri irukkara part-ah 
-   adutha line-ku kondu vara intha selector: */
-h1::after {
-    content: " {{ Day 5 }}"; /* Inga unga value-ah kodukalam */
-    display: block; /* Ithu thaan adutha line-ku thallum */
-    font-size: 4.5rem; /* Day 5 mattum innum perusa theriya */
+/* Forces 'Day 5' to the next line and styles it */
+.day-text {
+    display: block;
+    color: #fff;
+    font-size: 4rem;
     margin-top: 10px;
 }
 
-p { 
-    color: #444; 
-    font-size: 0.95rem; 
-    margin-bottom: 40px; 
+p {
+    color: #555; /* Dimmed gray for the description */
+    font-size: 0.95rem;
+    margin-bottom: 45px;
 }
 
+/* The dark button style at the bottom */
 .debug-panel {
-    background: #0a0a0a; 
-    border: 1px solid #1a1a1a; 
-    padding: 25px 60px; 
-    border-radius: 20px;
-    font-family: 'JetBrains Mono', monospace; 
+    background: #0d0d0d;
+    border: 1px solid #1a1a1a;
+    padding: 22px 65px;
+    border-radius: 18px;
+    font-family: 'JetBrains Mono', monospace;
     color: #f97316;
-    font-size: 0.9rem; 
+    font-size: 0.85rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
+    font-weight: 700;
 }
