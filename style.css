@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&family=JetBrains+Mono:wght@700&display=swap');
+
+body {
+    margin: 0; 
+    background: #000; 
+    color: #fff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh;
+}
+
+.lab-container { 
+    text-align: center; 
+    max-width: 600px; 
+}
+
+h1 { 
+    font-size: 3.5rem; 
+    font-weight: 800;
+    letter-spacing: -2px; 
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+/* "Lab Session" oru line-la vara */
+h1 span { 
+    color: #f97316;
+}
+
+/* {{ selectedDay }} mathiri irukkara part-ah 
+   adutha line-ku kondu vara intha selector: */
+h1::after {
+    content: " {{ Day 5 }}"; /* Inga unga value-ah kodukalam */
+    display: block; /* Ithu thaan adutha line-ku thallum */
+    font-size: 4.5rem; /* Day 5 mattum innum perusa theriya */
+    margin-top: 10px;
+}
+
+p { 
+    color: #444; 
+    font-size: 0.95rem; 
+    margin-bottom: 40px; 
+}
+
+.debug-panel {
+    background: #0a0a0a; 
+    border: 1px solid #1a1a1a; 
+    padding: 25px 60px; 
+    border-radius: 20px;
+    font-family: 'JetBrains Mono', monospace; 
+    color: #f97316;
+    font-size: 0.9rem; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
